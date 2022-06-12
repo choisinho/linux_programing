@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <sys/type.h>
+#include <sys/types.h>
 
 main()
 {
