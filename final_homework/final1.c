@@ -1,8 +1,10 @@
 #include <unistd.h>
-#include <stdio.h>
 #include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-main()
+int main()
 {
     pid_t pid, ret;
     int status = 0;
@@ -22,6 +24,7 @@ main()
         else if (pid == 0)
         {
             execlp(in_buf, in_buf, NULL);
+            printf("fail to exec\n");
         }
         else
         {
